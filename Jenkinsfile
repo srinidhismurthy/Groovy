@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        VENV_DIR = "$HOME/Srinidhi/env" // Directory for the virtual environment
+        VENV_DIR = "env" // Directory for the virtual environment
     }
 
     triggers {

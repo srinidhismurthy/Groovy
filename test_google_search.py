@@ -1,9 +1,9 @@
-from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 def test_google_search():
-    driver = webdriver.Chrome()
+    driver = ChromeDriverManager().install()
     driver.get("https://www.google.com")
     
     search_box = driver.find_element(By.NAME, "q")

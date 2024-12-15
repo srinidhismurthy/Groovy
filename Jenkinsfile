@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                     // Run the Selenium test script
-                    sh './${VENV_DIR}/bin/python test_google.py'
+                    sh './${VENV_DIR}/bin/python test_google_search.py'
                 }
             }
         }
